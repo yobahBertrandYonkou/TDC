@@ -1,0 +1,50 @@
+:root{
+    --color: #4185b3;
+}
+
+#head{
+    top: 0;
+    position: sticky;
+    background-color: white;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+}
+#navbar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color) !important;
+    width: 90%;
+}
+
+#logo{
+    font-weight: bolder;
+    font-size: 72px;
+    width: 80%;
+}
+
+#logo > a{
+    text-decoration: none;
+    color: var(--color);
+}
+
+#social-media-links{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+#social-media-links > a{
+    font-size: 36px;
+    padding: 5%;
+    color: var(--color) !important;
+    text-decoration: none;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TDC - Main</title>
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/tdc.css">
+<!--    fontawsome-->
+    <script src="https://kit.fontawesome.com/83d4dedb1b.js" crossorigin="anonymous"></script>
+ </head>
+<body>
+<!--    top navigation-->
+    <header id="head">
+        <div id="navbar">
+            <div id="navbar-content">
+                <div id="logo"><a href="../index.html">TDC</a></div>
+                <div id="social-media-links">
+                    
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></a></i>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!--    top navigation end-->
+    
+<!--    main content -->
+    <div id="main-container">
+<!--        left section-->
+        <div id="left-container">
+            <div id="instruction">Please, type or paste your text in the box below and click the "START" button. Results are shown on the right panel.</div>
+            
+<!--            text box and button-->
+            <div id="input-section">
+                <textarea id="input-box" placeholder="Text here..."></textarea>
+                <button id="start-btn">START</button>
+            </div>
+<!--            text box and button ends-->
+        </div>
+<!--    left section ends-->
+        
+<!--        right secton -->
+        <div id="right-container">
+            <div id="right-content">
+                <div id="result-title">RESULT PANEL</div>
+                <div id="result-content">
+                    <canvas id="guage-meter"></canvas>
+                    <div id="legend">
+                        <div id="legend-title">LEGEND</div>
+                        <div id="legend-content">
+                            <div class="legend-item">1</div>
+                            <div class="legend-item">2</div>
+                            <div class="legend-item">3</div>
+                            <div class="legend-item">4</div>
+                            <div class="legend-item">5</div>
+                            <div class="legend-item">6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        right section ends-->
+    </div>
+<!--    main content ends -->
+
+<!--    loader for async calls-->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div id="loader-text">Processing text...</div>
+    </div>
+    
+<!--    javaScripts-->
+    <script src="//cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/radial/gauge.min.js"></script>
+    <script src="../js/tdc.js"></script>
+</body>
+</html>
